@@ -21,6 +21,7 @@ def contarMultiplosDv(matriz, fila_inicio, fila_fin, col_inicio, col_fin):
         return 1 if (num % 5 == 0 or num % 7 == 0) else 0
     
    
+    if (fila_fin - fila_inicio) <= 2 and (col_fin - col_inicio) <= 2:
         total = 0
         for i in range(fila_inicio, fila_fin):
             for j in range(col_inicio, col_fin):
